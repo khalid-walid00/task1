@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Data } from './Data'
-
 export default function Function5Map() {
   return (
     
