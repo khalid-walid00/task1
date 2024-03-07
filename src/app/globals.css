@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  color: rgb(255, 102, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.bg-first{
+  background-image: url("./Images/1n.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+.shadowbutton{
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.149)
+}
+/* *{
+   border: 2px solid red ;
+} */
+
+.spectial{
+  display: flex;
+}
+@media screen and (max-width:400px){
+  .spectial{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .specialcontent{
+    top: 100px !important;
+    left: 20px !important;
+    width: 250px;
+    height: 250px;
+  }
+  .specialicon{
+    top: 50px !important;
+    left: 40px !important;
+  }
+  .specialcontenttext{
+    top: -5px !important;
+    left: 35px !important;
+    
+  }
+  .specialtext{
+    font-size: medium !important;
+  }
+}
