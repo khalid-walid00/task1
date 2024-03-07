@@ -7,6 +7,7 @@ import { Data } from './Data'
 
 export default function Function5Map() {
   return (
+    
     <div className=' grid  lg:place-items-center sm:place-items-center place-items-center my-20 '>
        {Data.map((item ,key)=>{
         return(
